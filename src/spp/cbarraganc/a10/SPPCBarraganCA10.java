@@ -30,7 +30,7 @@ public class SPPCBarraganCA10 {
         int a = 0;
         do{
             try{
-                System.out.println("Tamaño del arreglo: ");
+                System.out.println("Definir tamaño del arreglo: ");
                 a = key.nextInt();
                 flag = false;
             }
@@ -77,11 +77,11 @@ public class SPPCBarraganCA10 {
         System.out.println("Multiplicación: ");
         for (int i = 0; i < a.length; i++){
             System.out.println();
-        for (int j = 0; j < a[i].length; j++){
+        for (int j = 0; j < a[0].length; j++){
         for (int k = 0; k < a[0].length;k++){
-            r[j][i]+=a[k][i]*b[j][k];
+            r[i][j]+=a[i][k]*b[k][j];
         }
-            System.out.print(r[j][i]+"\t");
+            System.out.print(r[i][j]+"\t");
     }
     }
         return r; 
